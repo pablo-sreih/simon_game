@@ -27,6 +27,16 @@ function startGame() {
       playGame();
     }
   }
+  ontouchstart = function() {
+    if (game_start === false){
+      mainPattern = [];
+      playerPattern = [];
+      level = 0;
+      count = 0;
+      game_start = true;
+      playGame();
+    }
+  }
 }
 
 
